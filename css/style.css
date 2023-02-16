@@ -1,0 +1,81 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: auto;
+  background: #ff7918;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #292929;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+table.mangue {
+  width: 100%;
+  height: 100%;
+}
+
+table.mangue td {
+  vertical-align: middle;
+  position: relative;
+}
+
+table.mangue div.container {
+  position: relative;
+  width: 672px;
+  height: 672px;
+  overflow: visible;
+}
+
+table.mangue div.box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+div.box img {
+  display: block;
+  position: absolute;
+}
+
+#fond-mangue {
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 26s;
+  animation-play-state: running;
+
+  -webkit-animation-name: spin;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 26s;
+  -webkit-animation-play-state: running;
+
+  -moz-animation-name: spin;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -moz-animation-duration: 26s;
+  -moz-animation-play-state: running;
+}
